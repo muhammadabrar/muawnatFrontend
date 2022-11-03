@@ -1,0 +1,63 @@
+.Footer{
+      padding: 5rem 0;
+background-color: #F7F7F7
+;
+}
+
+.Logo{
+      width: 180px;
+      /* padding-top: .6rem; */
+    }
+
+.FooterWrap{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 32%);
+      justify-content: space-between;
+}
+
+.contact>h1, .Newsletter>h1{
+      font-weight: 700;
+      font-size: 24px;
+      color: #124378;
+}
+.contact>p>span{
+      color: #000;
+}
+
+/* border: 1px solid #dedede;
+padding: 5px; */
+
+
+.Input{
+      background-color: #fff;
+      /* padding: 5rem; */
+padding: 5px; 
+      display: flex;
+      border-radius: 2rem;
+    }
+    .InputF{
+      width: 100%;
+      margin: 0 .5rem;
+    }
+
+      
+    @media (max-width: 800px) {
+      .FooterWrap{
+            grid-template-columns: repeat(auto-fill, 50%);
+
+
+
+      }
+     
+    }
+
+    @media (max-width: 800px) {
+      .FooterWrap{
+            grid-template-columns: repeat(auto-fill, 90%);
+
+
+
+      }
+     
+    }
+    

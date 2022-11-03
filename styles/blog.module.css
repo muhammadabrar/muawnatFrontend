@@ -1,0 +1,71 @@
+.Blog {
+  margin: 5rem 0;
+}
+.Blog > h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.Blogs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 31%);
+  padding-top: 10px;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.img {
+  border-radius: 0.2rem 0.2rem 0 0;
+}
+.BlogCard {
+  box-shadow: 0px 2px 15px rgba(42, 42, 42, 0.1);
+  transition: all ease-in-out 0.3s;
+  border-radius: 0.2rem;
+}
+.cardheader {
+  /* width: 100%; */
+}
+.cardBody {
+  padding: 1rem;
+}
+
+.BlogCard:hover {
+  box-shadow: 0px 10px 30px 0px rgba(12, 46, 96, 0.1);
+}
+.badge,
+.Title {
+  margin: 0;
+  /* padding: 0; */
+}
+
+.badge {
+  background-color: rgb(16, 185, 69);
+  /* background-color: #1243788c; */
+  color: #fff;
+  width: fit-content;
+  padding: 3.5px 21px;
+  /* font-weight: 600; */
+  /* font-size: small; */
+}
+
+.Title {
+  font-size: 1rem;
+  padding-top: 0.5rem;
+}
+
+.Title:hover{
+      color: rgb(16, 185, 69);
+
+}
+
+@media (max-width: 700px) {
+  .Blogs {
+    grid-template-columns: repeat(auto-fill, 48%);
+  }
+}
+
+
+@media (max-width: 500px) {
+      .Blogs {
+        grid-template-columns: repeat(auto-fill, 90%);
+      }
+    }
+    

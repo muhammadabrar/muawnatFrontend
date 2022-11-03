@@ -2,7 +2,7 @@ import { Container, IconButton, Paper, TextField } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import css from "../styles/footer.module.css";
-import logo from "../public/logo.png";
+import logo from "../public/Logo.png";
 import InputBase from "@mui/material/InputBase";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 const Footer = () => {

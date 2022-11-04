@@ -1,0 +1,56 @@
+.row{
+      display: flex;
+      align-items: flex-start;
+      margin: 1rem 0;
+      /* width: 100%; */
+    }
+    .left{
+      width: 2in;
+      text-align: end;
+      color: #389fff;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 25px;
+      
+
+    }
+    .right{
+      width: 5in;
+      font-size: 13px;
+      font-weight: 500;
+      margin: 0 1rem;
+      line-height: 25px;
+    }
+    .right>p{
+      display: flex;
+      align-items: center;
+    }
+  .cv{
+      /* border: #389fff 1px solid; */
+      margin: 5rem auto;
+      width: 7in;
+      height: 9.25in;
+      padding: 2rem;
+  }
+  .line{
+      height: 2px;
+      background-color: #389fff;
+  }
+  .row2{
+      display: flex;
+      align-items: flex-start;
+  }
+  .icon{
+      padding-right: .5rem;
+      color: #389fff;
+  }
+  .color{
+      color: #389fff;
+      font-size: 14px;
+  }
+
+  .mainStesActions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

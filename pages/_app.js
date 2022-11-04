@@ -2,7 +2,9 @@ import '../styles/globals.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-
+import { store } from "../stores/store";
+import { Provider } from "react-redux";
+import Head from 'next/head';
 // You can also pass an optional settings object
 // below listed default settings
 
@@ -36,7 +38,16 @@ function MyApp({ Component, pageProps }) {
       
       
     }, []);
-  return <Component {...pageProps} />
+  return(<Provider store={store}>
+    <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      
+      <title>Muawnat</title>
+    </Head>
+
+    
+    <Component {...pageProps} />
+  </Provider>)
 }
 
 export default MyApp

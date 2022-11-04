@@ -1,0 +1,73 @@
+.pageContent{
+    margin: 5rem 0;
+}
+
+.actions{
+    margin: 3rem 0;
+  
+}
+
+.btn{
+    /* width: 100%; */
+    margin-left: 1rem;
+}
+
+.btn:first-child{
+    font-size: 14px;
+    margin-left: 0;
+}
+
+
+.error{
+    text-align: right;
+}
+
+.mainStesActions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputs{
+    display: flex;
+    margin: 2rem 0;
+    align-items: center;
+
+}
+
+.input{
+    margin-right: 1rem;
+    width: 100%;
+
+}
+.rowData{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.rowData>p{
+    margin-right: 1rem;
+}
+
+.stepsPage{
+    max-width: 50rem;
+}
+
+.card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 15px 0px;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: #6b6b6b;
+    margin-bottom: 2rem;
+}
+.card>h3{
+    color: rgb(35, 35, 35);
+    margin: 0;
+}
+
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}

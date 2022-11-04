@@ -9,7 +9,7 @@
       /* background-color: #fff; */
       color: #008000;
       overflow: hidden;
-      backdrop-filter: blur(8px);
+      backdrop-filter: blur(20px);
       transition: .5s;
       width: 100vw;
 
@@ -29,6 +29,7 @@
     }
     .fill{
       background-color: rgba(255, 255, 255, 0.7);
+      
       /* height: 6.8rem; */
   box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 15px 0px;
 

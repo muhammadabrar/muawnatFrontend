@@ -8,28 +8,39 @@
   position: relative;
 }
 .mapImage {
-  width: 90%;
-  opacity: 0.8;
+  width: 100%;
+  /* opacity: 0.8; */
+  
 }
-
+.overlay{
+  position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;background-color:  rgba(0, 0, 0, 0.357);
+}
 .HeroContent {
   position: absolute;
   top: 50%;
   left: 0;
   right: 0;
   transform: translate(0, -50%);
+  color: #fff;
+  
+
 }
 .cominSoon {
   margin: 0;
   padding: 0;
-  color: rgb(41, 41, 41);
+  color: #fff;
 }
 .Herotext {
-  font-size: 3rem;
+  font-size: 3.2rem;
   margin: 0;
   padding: 0;
   font-weight: 800;
   animation: fadeInRight 1s ease-in-out;
+
 }
 .HeroBtn {
   margin: 3rem 0;
@@ -60,6 +71,8 @@
 .UrduHerotext {
   text-align: end;
   animation: fadeInLeft 1s ease-in-out;
+  font-size: 3.2rem;
+
 }
 
 @keyframes fadeInRight {

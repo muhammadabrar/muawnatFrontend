@@ -5,7 +5,6 @@ import map from "../public/l1.jpg";
 import l2 from "../public/l2.jpg";
 import l3 from "../public/pic (1).jpg";
 
-
 import { Container, Button } from "@mui/material";
 import Link from "next/link";
 const Hero = () => {
@@ -17,24 +16,23 @@ const Hero = () => {
   }, [silde]);
   return (
     <div className={css.hero}>
-                    {silde == 1? 
-                     <div className={css.mapImage} >
-                     <Image src={l2} layout="responsive" data-aos={"fade-in"}/>
-                   </div>:
-                   silde == 2?
-                   <div className={css.mapImage} >
-                   <Image src={l3} layout="responsive" data-aos={"fade-in"}/>
-                 </div>:
-                  <div className={css.mapImage} >
-                  <Image src={map} layout="responsive" data-aos={"fade-in"}/>
-                </div>
-                  }
+      {silde == 1 ? (
+        <div className={css.mapImage}>
+          <Image src={l2} layout="responsive" data-aos={"fade-in"} />
+        </div>
+      ) : silde == 2 ? (
+        <div className={css.mapImage}>
+          <Image src={l3} layout="responsive" data-aos={"fade-in"} />
+        </div>
+      ) : (
+        <div className={css.mapImage}>
+          <Image src={map} layout="responsive" data-aos={"fade-in"} />
+        </div>
+      )}
       {/* <div className={css.mapImage} >
         <Image src={map} layout="responsive" data-aos={"fade-in"}/>
       </div> */}
-      <div className={css.overlay}>
-
-      </div>
+      <div className={css.overlay}></div>
       <div className={css.HeroContent}>
         <Container>
           <>
@@ -44,13 +42,17 @@ const Hero = () => {
               Get early access to <br />
               your favorite overseas jobs!
             </h1>
-            <h1 className={css.UrduHerotext}>
-            اپنی پسندیدہ بیرون ملک ملازمتوں تک<br /> 
-             !     جلد رسائی حاصل کریں  
+            <h1 className={`${css.UrduHerotext} urdu`}>
+              اپنی پسندیدہ بیرون ملک ملازمتوں تک
+              <br />! جلد رسائی حاصل کریں
             </h1>
-            <Link href={'/apply'}><Button variant="contained" className={`${css.HeroBtn} btnG btnR`}>
-              Apply For job
-            </Button>
+            <Link href={"/apply"}>
+              <Button
+                variant="contained"
+                className={`${css.HeroBtn} btnG btnR`}
+              >
+                Apply For job
+              </Button>
             </Link>
           </>
         </Container>

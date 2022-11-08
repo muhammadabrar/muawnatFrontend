@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../comp/navbar'
 import Footer from '../comp/Footer'
-import ApplyComp from '../comp/apply';
+import ApplyComp from '../comp/apply/apply';
 
 const Apply = () => {
       return (

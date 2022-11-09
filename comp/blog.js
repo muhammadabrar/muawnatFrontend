@@ -2,7 +2,10 @@ import { Button, Container } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import css from "../styles/blog.module.css";
-import b1 from "../public/l3.jpg";
+import b1 from "../public/b2.jpg";
+import b3 from "../public/b3.jpg";
+import b4 from "../public/b4.jpg";
+
 import Link from "next/link";
 const Blog = () => {
   return (
@@ -26,7 +29,7 @@ const Blog = () => {
 
           <div className={css.BlogCard} data-aos="fade-up" data-aos-delay="300">
             <div className={css.cardheader}>
-              <Image src={b1} className={css.img} layout="responsive" />
+              <Image src={b3} className={css.img} layout="responsive" />
             </div>
             <div className={css.cardBody}>
               <p className={css.badge}>About</p>
@@ -40,7 +43,7 @@ const Blog = () => {
 
           <div className={css.BlogCard} data-aos="fade-up" data-aos-delay="450">
             <div className={css.cardheader}>
-              <Image src={b1} className={css.img} layout="responsive" />
+              <Image src={b4} className={css.img} layout="responsive" />
             </div>
             <div className={css.cardBody}>
               <p className={css.badge}>About</p>

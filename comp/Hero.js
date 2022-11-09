@@ -17,19 +17,19 @@ const Hero = () => {
   return (
     <div className={css.hero}>
       {silde == 1 ? (
-        <div className={css.mapImage}>
-          <Image src={l2} layout="responsive" data-aos={"fade-in"} />
+        <div className={css.Heroimage}>
+          <Image className={css.image} src={l2} layout="fill" />
         </div>
       ) : silde == 2 ? (
-        <div className={css.mapImage}>
-          <Image src={l3} layout="responsive" data-aos={"fade-in"} />
+        <div className={css.Heroimage}>
+          <Image className={css.image} src={l3} layout="fill" />
         </div>
       ) : (
-        <div className={css.mapImage}>
-          <Image src={map} layout="responsive" data-aos={"fade-in"} />
+        <div className={css.Heroimage}>
+          <Image className={css.image} src={map} layout="fill" />
         </div>
       )}
-      {/* <div className={css.mapImage} >
+      {/* <div className={css.Heroimage} >
         <Image src={map} layout="responsive" data-aos={"fade-in"}/>
       </div> */}
       <div className={css.overlay}></div>

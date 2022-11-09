@@ -15,9 +15,7 @@ const Footer = () => {
               <Image src={logo} layout="responsive" />
             </div>
             <p className="text-muted">
-              But when shot real her. Chamber her one visite removal six sending
-              himself boys scot exquisite existend an But when shot real her
-              hamber her
+            Muawnat is a platform to find Full-time work opportunities with thousands of employers worldwide.
             </p>
           </div>
           <div className={css.Newsletter}>
@@ -37,15 +35,18 @@ const Footer = () => {
             <h1>Contact us</h1>
 
             <p className="text-muted">
-              <span>Address:</span> Hath of it fly signs bear be one blessed
-              after
+              <span>Address: </span> B-10 Link Rd, B-Block Block B Satellite Town, Rawalpindi, Punjab
             </p>
-            <p className="text-muted">
-              <span>Phone:</span>
-              +92 317 8303217
+            <p>
+            <a href="tel: +92 334 8516151" className="text-muted">
+              <span>Phone: </span>
+              +92 334 8516151
+            </a>
             </p>
-            <p className="text-muted">
-              <span>Email:</span> info@colorlib.com
+            <p>
+            <a href="mailto:info@muawant.com" className="text-muted">
+              <span>Email: </span> info@muawant.com
+            </a>
             </p>
           </div>
         </div>

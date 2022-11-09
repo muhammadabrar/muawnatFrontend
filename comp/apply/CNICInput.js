@@ -14,16 +14,18 @@ const CNICInput = ({
 }) => {
   return (
     <div>
+      <div className={css.Label}>
       <h1 data-aos={"fade-right"}>{englishText}</h1>
       <h1 data-aos={"fade-left"} className={css.textR}>
         {urduText}
       </h1>
+      </div>
       <TextField
         data-aos={"fade-up"}
         size="small"
         name={key}
         fullWidth
-        inputProps={{ inputMode: "numeric", pattern: "[0-9]{5}-[0-9]{7}-[0-9]{1}" }}
+        inputProps={{ inputMode: "numeric", pattern: "[0-9]{13}" }}
 
 
         type={"text"}

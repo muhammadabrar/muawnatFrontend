@@ -14,9 +14,11 @@ const HTA = () => {
               <span>01</span>
               <Link href={"/apply"}>
                 <>
-                  <h4>Go To Apply Page</h4>
+                  <h4>Click On  Apply Button</h4>
                 </>
               </Link>
+              <p>The world of work is changing fast. Don't get left behind.
+</p><br/>
               <Link href={"/apply"}>
                 <Button
                   variant="contained"
@@ -31,8 +33,8 @@ const HTA = () => {
           <div data-aos="fade-up" data-aos-delay="150">
             <div className={css.box}>
               <span>02</span>
-              <h4>Fill The Form</h4>
-              <p>Fill The Form One By One</p>
+              <h4>Fill Out The Form</h4>
+              <p>Shortlist roles, manage your applications and apply within seconds.</p>
             </div>
           </div>
 
@@ -41,7 +43,7 @@ const HTA = () => {
               <span>03</span>
               <h4> Upload Your Documents</h4>
               <p>
-                Upload your important documents cv, certification, Id card etc
+              Upload  all important documents including  resume, Experience letters, Passport and CNIC Let employers match you to their jobs as soon as they become available.
               </p>
             </div>
           </div>
@@ -50,8 +52,8 @@ const HTA = () => {
               <span>04</span>
               <h4>You Are Done</h4>
               <p>
-                Wait for our response. <br /> We will contact you as soon as
-                possible
+              Good! Please sit back and rest, and it's our turn to respond to you
+
               </p>
             </div>
           </div>

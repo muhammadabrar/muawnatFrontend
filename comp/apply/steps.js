@@ -25,56 +25,55 @@ const Steps = () => {
       // urduText="آپ کی تعلیم کیا ہے؟"
       stateDictKey="candidateType"
       key="candidateType"
-      errMsg="Please Enter Your Name"
-      placeholder="Enter Your Name"
-      Ans1U={"میٹرک اور انڈر میٹرک"}
-      Ans1E="Matric & Below Matric"
-      Ans2E={"Intermediate & Higher"}
-      Ans2U="انٹرمیڈیٹ اور ہائر"
+
+      Ans1U={"میٹرک یا میٹرک سے نیچے"}
+      Ans1E="Matric or Below Matric"
+      Ans2E={"Intermediate or Higher"}
+      Ans2U="انٹرمیڈیٹ یا اس سے زیادہ"
     />,
     <TextInput
       stateDictKey="Name"
       key="Name"
-      englishText="What is your name?"
-      urduText="آپ کا نام کیا ہے؟"
+      englishText="Your name"
+      urduText="آپ کا نام"
       placeholder="Enter Your Name"
     />,
     <TextInput
       stateDictKey="fName"
       key="fName"
-      englishText="What is your father's name?"
-      urduText="آپ کے والد کا نام کیا ہے؟"
+      englishText="Your father's name"
+      urduText="آپ کے والد کا نام"
       placeholder="Enter Your Father Name"
     />,
     <TextInput
       stateDictKey="age"
       key="age"
-      englishText="What is your age?"
-      urduText="آپ کی عمر کیا ہے؟"
+      englishText="Your age"
+      urduText="آپ کی عمر"
       placeholder="Enter Your Age"
     />,
     <GenderInput
       stateDictKey="gender"
       key="gender"
-      englishText="What is your gender?"
-      urduText="آپ کی جنس کیا ہے؟"
+      englishText="Gender"
+      urduText="آپ کی جنس "
       placeholder="Select Your Gender"
     />,
     <CNICInput
       stateDictKey="CNIC"
       key="CNIC"
-      englishText="What is Your CNIC No?"
-      urduText="آپ کا سی ان آی سی نمبر کیا ہے؟"
+      englishText="Your CNIC No"
+      urduText="آپ کا شناختی کارڈ نمبر"
       placeholder="Enter Your CNIC"
-      helper="Enter your CNIC: xxxxx-xxxxxxx-x"
+      helper="Enter your CNIC(eg. 1620312345671)"
     />,
     <PhoneInput
       stateDictKey="phone"
       key="phone"
-      englishText="What is your phone number?"
-      urduText="آپ کا فون نمبر کیا ہے؟"
-      placeholder="+92-312-3456789"
-      helper={"Enter your phone number : +92-xxx-xxxxxxx"}
+      englishText="Your phone number"
+      urduText="آپ کا فون نمبر"
+      placeholder="03123456789"
+      helper={"Enter your phone number (eg. 03123456789)"}
     />,
     <TextInput
       stateDictKey="workExperience"
@@ -95,23 +94,23 @@ const Steps = () => {
     <TextInput
       stateDictKey="skill"
       key="skill"
-      englishText="What is your skill?"
-      urduText="آپ کی مہارت کیا ہے؟"
+      englishText="Your skill?"
+      urduText="آپ کی مہارت"
       placeholder="Enter Your Skills"
       helper="If You don't have any skills just type Null"
     />,
     <FileInput
       stateDictKey="Files"
       key="Files"
-      englishText="upload Important files."
-      urduText="اہم فائلیں اپ لوڈ کریں۔"
+      englishText="Upload Relevant documents"
+      urduText="متعلقہ دستاویزات جیسے کے تجربہ سرٹیفیکیٹ، تعلیمی اسناد ، وغیرہ"
       placeholder="Passign Year"
     />,
     <PhotoInput
       stateDictKey="photo"
       key="photo"
       englishText="Upload Passport size Photo."
-      urduText="پاسپورٹ سائز تصویر اپ لوڈ کریں۔"
+      urduText="پاسپورٹ سائز تصویر۔"
       placeholder="Passign Year"
     />,
   ];
@@ -164,7 +163,7 @@ const Steps = () => {
       englishText="What is Your CNIC No?"
       urduText="آپ کا سی ان آی سی نمبر کیا ہے؟"
       placeholder="Enter Your CNIC"
-      helper="Enter your CNIC: xxxxx-xxxxxxx-x"
+      helper="Enter your CNIC(eg. 1620312345671)"
     />,
     <PhoneInput
       stateDictKey="phone"
@@ -172,7 +171,7 @@ const Steps = () => {
       englishText="What is your phone number?"
       urduText="آپ کا فون نمبر کیا ہے؟"
       placeholder="+92-312-3456789"
-      helper={"Enter your phone number : +92-xxx-xxxxxxx"}
+      helper={"Enter your phone number (eg. +92 3123456789)"}
     />,
     <TextInput
       stateDictKey="workExperience"
@@ -244,6 +243,7 @@ const Steps = () => {
   const [stateStore, setStateStore] = useState({
     candidateType: 1,
     gender: "female",
+    phone: ''
   });
 
   const onSubmit = (e) => {
@@ -320,6 +320,7 @@ const Steps = () => {
     return React.cloneElement(MQuestions[step], {
       stateStore: stateStore,
       onChangeHandler: onChangeHandler,
+      stepHandler: step==0  && stepHandler
     });
   };
   const prevStep = () => {
@@ -332,6 +333,11 @@ const Steps = () => {
 
   const onChangeHandler = (value, key) => {
     setStateStore({ ...stateStore, [key]: value });
+  };
+
+  const stepHandler = (value, key) => {
+    setStateStore({ ...stateStore, [key]: value });
+    onSubmit()
   };
 
   return (
@@ -354,7 +360,7 @@ const Steps = () => {
         <form onSubmit={onSubmit}>
 
             {getStep()}
-            <div className={css.actions}>
+            {!step==0 && <div className={css.actions}>
             <Button
               startIcon={<ArrowBackIcon />}
               variant="contained"
@@ -378,7 +384,7 @@ const Steps = () => {
                 ? "Submit"
                 : "Next"}
             </Button>
-          </div>
+          </div>}
         </form>
           )}
           

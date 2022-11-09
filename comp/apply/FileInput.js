@@ -23,7 +23,7 @@ const FileInput = ({
       <div className={css.fileWrap}>
       <p className={css.p}>Drag & Drop <br/> {stateStore[stateDictKey]?.length + " files selected"}</p>
 
-      <input className={css.fileInput} required onChange={(event) => onChangeHandler(event.target.files, stateDictKey)} multiple type="file" />
+      <input className={css.fileInput} onChange={(event) => onChangeHandler(event.target.files, stateDictKey)} multiple type="file" />
       
       {/* <TextField
         data-aos={"fade-up"}

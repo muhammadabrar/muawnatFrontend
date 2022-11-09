@@ -16,10 +16,10 @@ const Blog = () => {
             </div>
             <div className={css.cardBody}>
               <p className={css.badge}>About</p>
-              <Link href='#' ><h1 className={css.Title}>Title</h1></Link>
+              <Link href='#' ><h1 className={css.Title}>Are you a Pakistani looking for a job in a foreign country? 
+</h1></Link>
               <p className="text-muted">
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly
+              It can be difficult to find work abroad, but there are some things you can do to improve your chances...
               </p>
             </div>
           </div>
@@ -30,10 +30,10 @@ const Blog = () => {
             </div>
             <div className={css.cardBody}>
               <p className={css.badge}>About</p>
-              <Link href='#' ><h1 className={css.Title}>Title</h1></Link>
+              <Link href='#' ><h1 className={css.Title}>The most common way is to find a job through an international recruitment agency like muawant</h1></Link>
               <p className="text-muted">
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly
+              There are a few ways to get an engineering job in a foreign country from Pakistan. The most common way is to find a job through an international recruitment agency like muawant...
+
               </p>
             </div>
           </div>
@@ -44,10 +44,9 @@ const Blog = () => {
             </div>
             <div className={css.cardBody}>
               <p className={css.badge}>About</p>
-              <Link href='#' ><h1 className={css.Title}>Title</h1></Link>
+              <Link href='#' ><h1 className={css.Title}>There are several ways to get foreign jobs without qualifications from Pakistan.</h1></Link>
               <p className="text-muted">
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly
+              One way is to look for online job postings that do not require qualifications...
               </p>
             </div>
           </div>
